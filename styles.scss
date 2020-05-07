@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img{
+        width: 400px ;
+    }
+    .menu{ 
+        
+        ul{list-style: none;
+            display: flex;
+        flex-direction: column;
+            a{ text-decoration: none;
+            
+               }
+        }
+    }
+   
+}
+@media screen and (min-width: 500px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+            width: 400px ;
+        }
+        .menu{
+            
+            ul{list-style: none;
+                display: flex;
+            flex-direction: row;
+            align-items: space-evenly;
+                a{ text-decoration: none;
+                
+                   }
+            }
+        }
+       
+    }
+}
