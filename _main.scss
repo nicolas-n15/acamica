@@ -1,0 +1,27 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    
+}
+.contenido{
+    img{
+        width: 30%;
+    }
+}
+.items{
+    ul{
+        list-style-type: none;
+    }
+}
+
+@media screen and (min-width: 500px){
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
