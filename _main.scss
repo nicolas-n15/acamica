@@ -1,3 +1,6 @@
+body{
+    background-color: lightgreen;
+}
 main{
     max-width: 980px;
     width: 95%;
@@ -15,12 +18,15 @@ main{
             list-style: none;
         }
     }
-    .contenido{
+    .contenido{ 
         display: flex;
         flex-direction: column;
         img{
             width: 25%;
             max-width: 100%;
+        }
+        p{
+            margin-left: 1em;
         }
         
     
@@ -41,7 +47,7 @@ main{
        
         .items{
             font-size: 1rem;
-            width: 30%; 
+            width: 45%; 
             display: flex; 
             align-items: center;        
             ul{

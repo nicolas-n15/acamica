@@ -1,5 +1,5 @@
 header{
-    color: 707070;
+    color: #707070;
     max-width: 980px;
     width: 95%;
     margin: 0 auto;
@@ -20,10 +20,18 @@ header{
             flex-direction: column;
 
             li{ 
-                margin: 1.5%
+                margin: 2%
             }
             a{
                 text-decoration: none;
+                color: #707070;
+                transition: 0.3s;
+                
+            }
+            a:hover{
+                color: lightskyblue;
+                font-size: 2rem;
+                
             }
         }
         

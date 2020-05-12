@@ -1,5 +1,5 @@
 header {
-  color: 707070;
+  color: #707070;
   max-width: 980px;
   width: 95%;
   margin: 0 auto;
@@ -32,11 +32,19 @@ header .menu ul {
 }
 
 header .menu ul li {
-  margin: 1.5%;
+  margin: 2%;
 }
 
 header .menu ul a {
   text-decoration: none;
+  color: #707070;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .menu ul a:hover {
+  color: lightskyblue;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 500px) {
@@ -72,6 +80,10 @@ header .menu ul a {
   header .menu ul a {
     text-decoration: none;
   }
+}
+
+body {
+  background-color: lightgreen;
 }
 
 main {
@@ -118,6 +130,10 @@ main .contenido img {
   max-width: 100%;
 }
 
+main .contenido p {
+  margin-left: 1em;
+}
+
 @media screen and (min-width: 600px) {
   main {
     max-width: 980px;
@@ -137,7 +153,7 @@ main .contenido img {
   }
   main .items {
     font-size: 1rem;
-    width: 30%;
+    width: 45%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
