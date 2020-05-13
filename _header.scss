@@ -12,12 +12,20 @@ header{
         max-width: 100%;
     }
 
-    .menu{ 
+    .menu{
+        nav{ 
+            input{
+            transform: scale(1);
+            opacity: 0;
+            position: absolute;
+            }
+        }
         
         ul{
             list-style: none;
             display: flex;
             flex-direction: column;
+            opacity: 0;
 
             li{ 
                 margin: 2%
@@ -34,7 +42,9 @@ header{
                 
             }
         }
-        
+        nav input[type="checkbox"]:checked ~ ul{
+            opacity: 1;
+        }
     }
 
 }
@@ -50,12 +60,21 @@ header{
             max-width: 100%;
         }
         .menu{
-            
+
+            nav{ 
+                i{
+                opacity: 0;
+                }
+                input{
+                    opacity: 0;
+                }
+            }
             ul{
                 list-style: none;
                 display: flex;
             flex-direction: row;
             align-items: space-evenly;
+            opacity: 1;
                 a{
                     text-decoration: none;
                 }
